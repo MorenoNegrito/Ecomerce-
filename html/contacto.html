@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/css/contacto.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="/imagenes/dog-eat-bone-silhouette-design-cute-pet-logo-template-sign-and-symbol-vector (1).jpg"></a>
+            </div>
+
+
+
+            <ul class="nav-links">
+                                <li><a href="/html/index.html">Home</a></li>
+
+                <li><a href="/html/productos.html">Productos</a></li>
+                <li><a href="/html/registro.html">Registro</a></li>
+                <li><a href="/html/login.html">Iniciar Sesión</a></li>
+                <li><a href="/html/nosotros.html">Nosotros</a></li>
+                <li><a href="/html/blogs.html" class="active">Blogs</a></li>
+                <li><a href="/html/contacto.html">Contacto</a></li>
+            </ul>
+            <div class="carrito">
+                <a href="/html/carrito.html">🛒</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="carta-presentacion">
+            <div class="carta">
+                <h1 class="title">Morenoshop</h1>
+                <p>Recuerda que puedes acceder a nuestros beneficios</p>
+            </div>
+        </section>
+
+        
+        <section class="formulario-de-contacto">
+            <div class="formulario">
+             <h2>Contáctanos</h2>
+                <form id="formularioContacto" action="https://formspree.io/f/xrbaoaqo" method="POST">
+            
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" required>
+
+                <label for="email">Correo:</label>
+                <input type="email" name="email" id="email" placeholder="ejemplo@email.com" required>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea name="comentarios" id="comentarios" placeholder="Escribe tu mensaje..." rows="4" required></textarea>
+
+                <button type="submit" class="btn-contacto">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Tienda Mascotas. Todos los derechos reservados.</p>
+    </footer>
+
+
+
+    <script src="/js/app.js"></script>
+</body>
+</html>

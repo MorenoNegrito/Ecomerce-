@@ -1,0 +1,222 @@
+body {
+    min-height: 100vh;      /* asegura que el body ocupe toda la altura */
+    display: flex;
+    flex-direction: column; /* apila contenido de arriba hacia abajo */
+}
+
+
+
+header{
+
+    background-color: #00BFA6;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 1);
+
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo img {
+    width: 60px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+
+}
+
+
+.navbar .nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+
+
+.navbar .nav-links li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+.logo img {
+    width: 120px;        
+    height: auto;        
+    min-width: 80px;     
+}
+
+
+.navbar .carrito a{
+    font-size: 1.5rem;
+    color: wheat;
+    text-decoration: none;
+}
+
+
+
+
+.carta-presentacion{
+    display: flex;
+    justify-content: center;
+    margin: 30px 20px;
+
+
+}
+
+
+.carta {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px 20px;
+    max-width: 350px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 8px 15px rgb(0, 0, 0, 0.1);
+
+}
+
+.carta h1{
+    font-size: 1.3rem;
+    color: #17252a;
+    margin-bottom: 10px;
+
+}
+
+
+.carta p{
+    font-size: 1rem;
+    color: #333;
+
+}
+
+
+.login{
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px 10px 20px;
+
+}
+
+
+
+.login-card{
+    background-color: white;
+    padding: 30px 30px;
+    box-shadow: 0 8px 15px rgb(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+
+.login-card h2{
+    text-align: center;
+    margin-bottom: 25px;
+    flex-direction: column;
+
+}
+
+.login-card form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+.login-card label{
+    font-size: 1rem;
+    margin: 10px 1px;
+    font-weight: bolder;
+    color: #333;
+    
+
+}
+
+.login-card input{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+.login-card input:focus{
+    outline: none;
+    color: #3aafa9;
+    box-shadow: 0 0 5px rgb(58, 175, 169, 0.5);
+
+
+}
+
+
+
+.btn-login{
+    background-color: #2b7a78;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 17px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+
+}
+
+
+.btn-login:hover{
+    background-color: #3aafa9;
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 20px 5px rgba(0,0,0,0.5);
+}
+
+.mensaje-error{
+    color: red;
+    font-family: 0.9 rem;
+    margin-top: 10px;
+    text-align: center;
+
+
+}
+
+
+footer {
+    background-color: #17252a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+@media (max-width: 480px) {
+    .login-card, .carta {
+        padding: 30px 20px;
+    }
+
+    .carta h1 {
+        font-size: 1.3rem;
+    }
+
+    .login-card h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo img {
+        width: 100px;   /* más pequeño pero aún visible */
+    }
+}

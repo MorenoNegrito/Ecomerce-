@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+header{
+    background-color: #00BFA6;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 1);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 70px;
+    height: auto;
+    min-width: 60px;
+    border-radius: 50%;
+}
+
+.navbar .nav-links{
+    
+    display: flex;
+    list-style: none;
+    gap: 20px;    
+
+
+}
+
+
+.navbar .nav-links a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+
+.navbar .carrito a{
+    font-size: 1.5rem;
+    color: wheat;
+    text-decoration: none;
+}
+
+
+
+.carta-presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.carta{
+    color: #17252a;
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0px 6px 15px rgb(0, 0, 0, 0.1);
+
+
+
+}
+
+
+
+
+.carta p{
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    padding: 0 5px;
+}
+
+
+
+
+.formulario-de-contacto {
+
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.btn-contacto {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.btn-contacto:hover {
+    background: #0056b3;
+    transform: translateY(-5px);
+}
+
+
+
+footer {
+    background-color: #17252a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
