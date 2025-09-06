@@ -1,12 +1,13 @@
 body{
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
+    
 
 }
 
 
 header{
-    background-color: #00BFA6;
+    background-color: #005F99;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgb(0, 0, 0, 1);
 }

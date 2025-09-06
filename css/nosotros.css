@@ -1,14 +1,16 @@
 body {
-    min-height: 100vh;      /* asegura que el body ocupe toda la altura */
+    min-height: 100vh;      
     display: flex;
-    flex-direction: column; /* apila contenido de arriba hacia abajo */
+    flex-direction: column; 
+    background:linear-gradient(135deg, #89f7fe, #66a6ff);
+
 }
 
 
 
 header{
 
-    background-color: #00BFA6;
+    background-color: #005F99;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgb(0, 0, 0, 1);
 
@@ -62,13 +64,25 @@ header{
 
 
 
-/* Contenido principal */
 .nosotros-container {
     max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
+    background-color: rgb(205, 230, 226);
+    transition: 1s;
 }
 
+
+.nosotros-container:hover{
+
+    border-radius: 20px;
+
+    text-shadow: 0 0 10px rgb(35, 146, 214);
+    transform: translateY(-10px);
+    transition: 2s;
+
+
+}
 .nosotros-container h1 {
     text-align: center;
     color: #333;

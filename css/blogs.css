@@ -1,13 +1,16 @@
 body {
     min-height: 100vh;     
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+background: linear-gradient(135deg, #89f7fe, #66a6ff);
+ }
+    
 
 
 
 header{
 
-    background-color: #00BFA6;
+    background-color: #005F99;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgb(0, 0, 0, 1);
 
@@ -75,7 +78,15 @@ header{
     padding: 20px;
     max-width: 500px;
     text-align: center;
+    transition: all 0.3s ease;
 }
+
+
+.blog-card:hover {
+    transform: translate(0, -10px ) scale(1.05); 
+    box-shadow: 0 10px 20px rgba(22, 64, 202, 0.5); 
+}
+
 
 
 .blog-card img{

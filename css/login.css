@@ -2,13 +2,15 @@ body {
     min-height: 100vh;      /* asegura que el body ocupe toda la altura */
     display: flex;
     flex-direction: column; /* apila contenido de arriba hacia abajo */
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+;
 }
 
 
 
 header{
 
-    background-color: #00BFA6;
+    background-color: #005F99;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgb(0, 0, 0, 1);
 
