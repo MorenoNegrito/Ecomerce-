@@ -1,3 +1,6 @@
+*{
+    margin: ;
+}
 body {
     min-height: 100vh;      /* asegura que el body ocupe toda la altura */
     display: flex;
@@ -31,6 +34,11 @@ header{
 
 }
 
+.burger{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
 
 .navbar .nav-links{
     list-style: none;
@@ -220,5 +228,28 @@ h1, h2, h3 {
 @media (max-width: 600px) {
     .logo img {
         width: 100px;   /* más pequeño pero aún visible */
+    }
+}
+
+
+
+@media(max-width: 768px){
+    .nav-links{
+        flex-direction: column;
+        display: none;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+        background-color: #864848;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+    .burger{
+        display: block;
+    }
+
+    .nav-links:active{
+        display: flex;
     }
 }
