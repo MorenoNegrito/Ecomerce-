@@ -1,10 +1,9 @@
 *{
-    margin: ;
+    margin: 0 ;
 }
 body {
-    min-height: 100vh;      /* asegura que el body ocupe toda la altura */
-    display: flex;
-    flex-direction: column; /* apila contenido de arriba hacia abajo */
+    min-height: 100vh;      
+    flex-direction: column; 
     background: linear-gradient(135deg, #89f7fe, #66a6ff);
 ;
 }
@@ -33,6 +32,24 @@ header{
     border-radius: 50%;
 
 }
+.carritoo{
+    width: 80px;
+    height: auto;
+    min-width: 60px;
+    transition: 2s;
+    border-radius: 10;
+    
+}
+
+.carritoo:hover{
+    background-color: aliceblue;
+    border-radius: 60px;
+
+    transform: translateX(10px);
+    transition: 1s;
+}
+
+
 
 .burger{
     display: none;
@@ -211,45 +228,18 @@ h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
 
-@media (max-width: 480px) {
-    .login-card, .carta {
-        padding: 30px 20px;
-    }
-
-    .carta h1 {
-        font-size: 1.3rem;
-    }
-
-    .login-card h2 {
-        font-size: 1.4rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .logo img {
-        width: 100px;   /* más pequeño pero aún visible */
-    }
-}
 
 
 
 @media(max-width: 768px){
     .nav-links{
         flex-direction: column;
-        display: none;
         gap: 10px;
-        width: 100%;
-        text-align: center;
-        background-color: #864848;
-        position: absolute;
-        top: 60px;
-        left: 0;
-    }
-    .burger{
-        display: block;
+        align-items: center;
     }
 
-    .nav-links:active{
-        display: flex;
-    }
 }
+
+
+
+

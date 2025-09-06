@@ -33,6 +33,24 @@ header{
     border-radius: 50%;
 
 }
+.carritoo{
+    width: 80px;
+    height: auto;
+    min-width: 60px;
+    transition: 2s;
+    border-radius: 10;
+    
+}
+
+.carritoo:hover{
+    background-color: aliceblue;
+    border-radius: 60px;
+
+    transform: translateX(10px);
+    transition: 1s;
+}
+
+
 
 
 .navbar .nav-links{
@@ -160,29 +178,18 @@ footer {
     margin-top: 30px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 480px) {
-    .registro-card {
-        padding: 30px 20px;
-    }
-}
-@media (max-width: 560px) {
-    .nav-links {
-        display: none; /* los ocultas en móvil */
+
+
+
+
+@media(max-width: 768px){
+    .nav-links{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
     }
 
-    .menu-toggle {
-        display: block; 
-    }
 }
 
 
-@media (max-width: 560px) {
-    .nav-links li a {
-        font-size: 0.8rem;
-        padding: 5px;
-    }
-    .logo img {
-        width: 100px;
-    }
-}
+

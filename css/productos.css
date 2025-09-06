@@ -61,6 +61,24 @@ header{
     min-width: 60px;     
     border-radius: 50%;
 }
+.carritoo{
+    width: 80px;
+    height: auto;
+    min-width: 60px;
+    transition: 2s;
+    border-radius: 10;
+    
+}
+
+.carritoo:hover{
+    background-color: aliceblue;
+    border-radius: 60px;
+
+    transform: translateX(10px);
+    transition: 1s;
+}
+
+
 
 
 
@@ -143,6 +161,18 @@ footer{
     padding: 15px 0;
     margin-top: 15px;
     width: 100%;
+
+}
+
+
+
+
+@media(max-width: 768px){
+    .nav-links{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
 
 }
 

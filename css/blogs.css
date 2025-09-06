@@ -35,6 +35,24 @@ header{
 
 }
 
+.carritoo{
+    width: 80px;
+    height: auto;
+    min-width: 60px;
+    transition: 2s;
+    border-radius: 10;
+    
+}
+
+.carritoo:hover{
+    background-color: aliceblue;
+    border-radius: 60px;
+
+    transform: translateX(10px);
+    transition: 1s;
+}
+
+
 
 .navbar .nav-links{
     list-style: none;
@@ -131,3 +149,14 @@ color: #17252a;
     line-height: 1.6;
     color: #444;
 }
+
+@media(max-width: 768px){
+    .nav-links{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+}
+
+

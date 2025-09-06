@@ -62,6 +62,23 @@ header{
     min-width: 80px;     
 }
 
+.carritoo{
+    width: 80px;
+    height: auto;
+    min-width: 60px;
+    transition: 2s;
+    border-radius: 10;
+    
+}
+
+.carritoo:hover{
+    background-color: aliceblue;
+    border-radius: 60px;
+
+    transform: translateX(10px);
+    transition: 1s;
+}
+
 
 .navbar .carrito a{
     font-size: 1.5rem;
@@ -73,35 +90,34 @@ header{
 
 .nosotros-container {
     max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
-    background-color: rgb(205, 230, 226);
-    transition: 1s;
-}
-
-
-.nosotros-container:hover{
-
-    border-radius: 20px;
-
-    text-shadow: 0 0 10px rgb(35, 146, 214);
-    transform: translateY(-10px);
-    transition: 2s;
-
-
-}
-.nosotros-container h1 {
+    margin: auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.nosotros-container h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #0b76ef;
 }
 
 .nosotros-container h2 {
-    color: #333;
-    margin-top: 30px;
+    font-size: 1.4rem;
+    margin: 25px 0 10px;
+    color: #0b76ef;
 }
 
-/* Footer */
+.nosotros-container p {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+
 footer {
     background-color: #17252a;
     color: white;
@@ -110,5 +126,15 @@ footer {
     margin-top: 30px;
 }
 
+
+
+@media(max-width: 768px){
+    .nav-links{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+}
 
 
