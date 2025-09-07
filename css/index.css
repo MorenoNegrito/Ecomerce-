@@ -78,7 +78,7 @@ header{
 }
 
 .carritoo:hover{
-    background-color: aliceblue;
+    background-color: wheat;
     border-radius: 60px;
 
     transform: translateX(10px);
@@ -167,9 +167,17 @@ header{
 
 }
 
+
+h2{
+
+    background-color: #efeb09;
+    margin: 10px;
+    color: red;
+    
+}
 .productos-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px   ;
     padding: 0 20px;
 
@@ -253,5 +261,6 @@ footer{
     }
 
 }
+
 
 

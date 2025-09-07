@@ -28,40 +28,93 @@
         </nav>
     </header>
 
-    <section class="presentacion">
-        <div class="carta">
-            <h1>Bienvenido a morenoshop</h1>
-            <p>Todo lo que necesitas en productos para tus regalones.</p>
-            <a href="productos.html" class="btn-ver-productos">Ver Productosss</a>
-        </div>
-    </section>
+<section class="productos-destacados">
+  <h2>Productos Destacados</h2>
+  <div class="productos-grid">
 
-    <section class="productos-destacados">
-        <h2>Productos Destacados</h2>
-        <div class="productos-grid">
-            <div class="producto-card">
-                <img src="imagenes/alimentopremiun.png" alt="Producto 1">
-                <h3>Alimento Premium</h3>
-                <p>Atributos: Rico en proteínas, sin colorantess</p>
-                <p class="precio">$25.000</p>
-                <button class="btn-agregar">Agregar al carrito</button>
-            </div>
+    <div class="producto-card">
+      <img src="imagenes/alimentopremiun.png" alt="Alimento Premium">
+      <h3>Alimento Premium</h3>
+      <p>Atributos: Rico en proteínas, sin colorantes, ideal para perros adultos</p>
+      <p class="precio">$25.000</p>
+      <button class="btn-agregar" onclick="agregarAlCarrito('Alimento Premium', 25000)">Agregar al carrito</button>
+    </div>
 
-            <div class="producto-card">
-                <img src="imagenes/snacks.webp" alt="Producto 2">
-                <h3>Snack Saludable</h3>
-                <p>Atributos: Bajo en grasa, sabor pollo</p>
-                <p class="precio">$12.000</p>
-                <button class="btn-agregar">Agregar al carrito</button>
-            </div>
+    <div class="producto-card">
+      <img src="imagenes/snacks.webp" alt="Snack Saludable">
+      <h3>Snack Saludable</h3>
+      <p>Atributos: Bajo en grasa, sabor pollo, perfecto para entrenamiento</p>
+      <p class="precio">$12.000</p>
+      <button class="btn-agregar" onclick="agregarAlCarrito('Snack Saludable', 12000)">Agregar al carrito</button>
+    </div>
 
-        </div>
-    </section>
+    <div class="producto-card">
+      <img src="imagenes/jugete hueso.webp" alt="Hueso de Juguete">
+      <h3>Hueso de Juguete</h3>
+      <p>Atributos: Resistente, seguro, recomendado para perros medianos</p>
+      <p class="precio">$8.000</p>
+      <button class="btn-agregar" onclick="agregarAlCarrito('Hueso de Juguete', 8000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto-card">
+      <img src="imagenes/camadeperro.jpg" alt="Cama para Perro">
+      <h3>Cama para Perro</h3>
+      <p>Atributos: Suave, lavable, tamaño mediano</p>
+      <p class="precio">$35.000</p>
+      <button class="btn-agregar" onclick="agregarAlCarrito('Cama para Perro', 35000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto-card">
+      <img src="imagenes/Bebedero-gato-acero-inox-llave-2.jpg" alt="Bebedero">
+      <h3>Bebedero Automático</h3>
+      <p>Atributos: Acero inoxidable, flujo continuo, fácil limpieza</p>
+      <p class="precio">$20.000</p>
+      <button class="btn-agregar" onclick="agregarAlCarrito('Bebedero Automático', 20000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto-card">
+      <img src="imagenes/collar.png" alt="Collar Perrito">
+      <h3>Collar Perrito</h3>
+      <p>Atributos: Ajustable, colores variados, material resistente</p>
+      <p class="precio">$7.000</p>
+      <button class="btn-agregar" onclick="agregarAlCarrito('Collar Perrito', 7000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto-card">
+      <img src="imagenes/ropadog.jpg" alt="Ropa Perrito">
+      <h3>Ropa Perrito</h3>
+      <p>Atributos: Suave, cómodo, disponible en varias tallas</p>
+      <p class="precio">$15.000</p>
+      <button class="btn-agregar" onclick="agregarAlCarrito('Ropa Perrito', 15000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto-card">
+      <img src="imagenes/gatosaludable.jpg" alt="Snack Saludable 2">
+      <h3>Snack Saludable 2</h3>
+      <p>Atributos: Bajo en calorías, sabor atún, apto para gatos adultos</p>
+      <p class="precio">$10.000</p>
+      <button class="btn-agregar" onclick="agregarAlCarrito('Snack Saludable 2', 10000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto-card">
+      <img src="imagenes/cepillo.jpg" alt="Cepillo para gatos">
+      <h3>Cepillo para Gatos</h3>
+      <p>Atributos: Cerdas suaves, elimina pelo muerto, fácil de limpiar</p>
+      <p class="precio">$5.000</p>
+      <button class="btn-agregar" onclick="agregarAlCarrito('Cepillo para Gatos', 5000)">Agregar al carrito</button>
+    </div>
+
+  </div>
+</section>
+
+
+
+
 
     <footer>
         <p>&copy; 2025 Tienda Mascotas. Todos los derechos reservados.</p>
     </footer>
 
-    <script src=""></script>
+    <script src="js/carrito.js"></script>
 </body>
 </html>
