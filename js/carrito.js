@@ -1,6 +1,5 @@
 // carrito.js
 
-// Mostrar carrito si existe en la página
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 let total = carrito.reduce((acc, item) => acc + item.precio, 0);
 
@@ -10,13 +9,13 @@ function agregarAlCarrito(nombre, precio) {
   carrito.push({ nombre, precio });
   total += precio;
   localStorage.setItem("carrito", JSON.stringify(carrito));
-  mostrarCarrito(); // solo funciona si existe el contenedor
+  mostrarCarrito(); 
   alert(nombre + " agregado al carrito");
 }
 
 function mostrarCarrito() {
   const lista = document.getElementById("lista-carrito");
-  if (!lista) return; // si no existe, salir
+  if (!lista) return; 
   lista.innerHTML = "";
 
   carrito.forEach((item, index) => {

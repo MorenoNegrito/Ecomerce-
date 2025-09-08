@@ -1,4 +1,3 @@
-// Esperamos a que se cargue el DOM
 document.addEventListener("DOMContentLoaded", () => {
     const formRegistro = document.getElementById("formRegistro");
 
@@ -10,20 +9,17 @@ document.addEventListener("DOMContentLoaded", () => {
             const contrasena = document.getElementById("contrasena").value.trim();
             const contrasena2 = document.getElementById("contrasena2").value.trim();
 
-            // Validar contraseñas
             if (contrasena !== contrasena2) {
                 alert("Las contraseñas no coinciden");
                 return;
             }
 
-            // Guardar en localStorage
             localStorage.setItem("usuarioEmail", email);
             localStorage.setItem("usuarioContrasena", contrasena);
             localStorage.setItem("sesionIniciada", "true");
 
             alert("Registro exitoso. Sesión iniciada.");
 
-            // Redirigir a la página principal
             window.location.href = "index.html";
         });
     }

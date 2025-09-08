@@ -4,19 +4,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (sesionIniciada === "true") {
         const email = localStorage.getItem("usuarioEmail");
 
-        // Buscar en la barra de navegación dónde mostrar el usuario
         const navLinks = document.querySelector(".nav-links");
 
         if (navLinks) {
-            // Eliminar opción de "Iniciar Sesión"
             const loginItem = navLinks.querySelector("a[href='login.html']");
             if (loginItem) loginItem.parentElement.remove();
 
-            // Eliminar la opción de "Registro"
             const registerItem = navLinks.querySelector("a[href='registro.html']")
             if (registerItem) registerItem.parentElement.remove();
 
-            // Agregar un texto con el email y botón para cerrar sesión
             const liUsuario = document.createElement("li");
             liUsuario.innerHTML = `
                 <span>👤 ${email}</span> 
@@ -25,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
             navLinks.appendChild(liUsuario);
         }
 
-        // Función de cerrar sesión
         const btnCerrar = document.getElementById("cerrarSesion");
         if (btnCerrar) {
             btnCerrar.addEventListener("click", () => {
